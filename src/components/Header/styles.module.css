@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 5px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logoText {
+  color: #244d4d;
+  font-size: 1.5rem;
+}
+
+.logoText > span {
+  font-size: 1.6rem;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.navbar > li {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar > li a {
+  text-decoration: none;
+  color: rgb(85, 84, 84);
+  font-weight: 500;
+}
+
+.navbar > li > svg {
+  margin-left: 5px;
+}
+
+.navbar > li > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  top: 3rem;
+  left: -100%;
+  z-index: 100;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 200px;
+  border-top: 5px solid #244d4d;
+  visibility: hidden;
+  transition: top 200ms linear;
+}
+
+.navbar > li:hover > ul {
+  visibility: visible;
+  top: 1.6rem;
+}
+
+.navbar > li > ul > li {
+  margin-bottom: 5px;
+}
+
+.navbar > li > ul > li > a {
+  font-size: 14px;
+}
+
+.bars {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .bars {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border-top: 5px solid #244d4d;
+    width: calc(100% - 20px);
+    position: fixed;
+    top: -100%;
+    left: 10px;
+    right: 10px;
+    z-index: 60;
+    visibility: hidden;
+    transition: top 400ms linear;
+  }
+
+  .navbar li {
+    margin: 0 0 15px 0;
+    justify-content: space-between;
+  }
+
+  .navbar li a {
+    width: 100%;
+  }
+
+  .navbar > li > ul {
+    z-index: 15;
+    left: 0;
+    border: none;
+    width: 100%;
+    border-top: 5px solid #244d4d;
+  }
+
+  .showNav {
+    visibility: visible;
+    top: 60px;
+  }
+
+  .hideNav {
+    top: -100%;
+    visibility: visible;
+  }
+}

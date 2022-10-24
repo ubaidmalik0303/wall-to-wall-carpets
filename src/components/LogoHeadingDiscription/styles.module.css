@@ -1,0 +1,29 @@
+.logoHeadingDiscription {
+  display: flex;
+}
+
+.headingDiscription {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon{
+  padding-right: 20px;
+}
+
+.icon > svg {
+  color: #244d4d;
+  font-size: 50px;
+}
+
+.headingDiscription h3{
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.headingDiscription p{
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: rgb(87, 86, 86);
+}

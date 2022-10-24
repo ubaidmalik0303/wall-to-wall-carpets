@@ -1,0 +1,15 @@
+.headingBox {
+  display: flex;
+  align-items: center;
+}
+
+.headingBox > div {
+  background-color: #244d4d;
+  width: 150px;
+  height: 5px;
+  margin-right: 20px;
+}
+
+.headingBox h1{
+    font-weight: 900;
+}
