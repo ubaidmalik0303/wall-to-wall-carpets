@@ -1,0 +1,30 @@
+.themeButton {
+  outline: none;
+  color: #244d4d;
+  text-decoration: none;
+  border: 2px solid #244d4d;
+  padding: 10px 20px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: transform 200ms linear;
+}
+
+.themeButton > svg {
+  color: #244d4d;
+  font-size: 30px;
+  position: absolute;
+  right: -20px;
+  transition: right 200ms linear;
+}
+
+.themeButton:hover {
+  color: #244d4d;
+  transform: scale(1.1);
+}
+
+.themeButton:hover > svg {
+  right: -25px;
+}

@@ -1,22 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.themeBgColor{
+body {
+  overflow-x: hidden;
+}
+
+.themeBgColor {
   background-color: rgb(241, 241, 241);
 }
 
-.layout *{
-    font-family: "Poppins", sans-serif;
+.themeBgColorSecond {
+  background-color: #244d4d;
 }
 
-body{
-    position: relative;
-    background-color: rgb(228, 226, 226);
+.layout * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: rgb(228, 226, 226);
 }

@@ -1,0 +1,15 @@
+.homeServices svg{
+    color: #244d4d;
+    font-size: 70px;
+}
+
+.homeServices h4{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.homeServices p{
+    color: rgb(53, 53, 53);
+    text-align: center;
+}

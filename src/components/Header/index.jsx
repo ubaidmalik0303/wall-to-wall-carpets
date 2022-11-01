@@ -18,20 +18,25 @@ const Header = () => {
       </h1>
       <FaBars size={25} className={headerstyles.bars} onClick={handleShowNav} />
       <ul
-        className={`${headerstyles.navbar} ${show ? headerstyles.showNav : headerstyles.hideNav}`}
+        className={`${headerstyles.navbar} ${
+          show ? headerstyles.showNav : headerstyles.hideNav
+        }`}
       >
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/">Serices</Link>
+          <Link to="/wall-to-wall-carpets">Wall To Wall Carpets</Link>
           <FiArrowDown />
           <ul>
             <li>
-              <Link to="/">Office Wall To Wall Carpets</Link>
+              <Link to="/">Office</Link>
+            </li>
+            <li>
+              <Link to="/wall-to-wall-carpets/sisal-carpets">Sisal Carpets</Link>
             </li>
             <li>
               <Link to="/">Room</Link>
@@ -42,7 +47,7 @@ const Header = () => {
           </ul>
         </li>
         <li>
-          <Link to="/">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>

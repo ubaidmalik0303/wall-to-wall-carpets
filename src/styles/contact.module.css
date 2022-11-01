@@ -1,0 +1,63 @@
+.contact h2 {
+  font-weight: 500;
+}
+
+.contactDetails > div {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contactDetails > div > svg {
+  font-size: 40px;
+  color: #244d4d;
+  margin-right: 15px;
+}
+
+.contactDetails > div > span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form > input,
+.contact form > textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #244d4d;
+}
+
+.contact form > input[type="submit"] {
+  background-color: #244d4d;
+  color: white;
+  font-weight: 500;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 0 0;
+}
+
+.socialIcons > a {
+  font-size: 25px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: transform 300ms linear;
+}
+
+.socialIcons > a:hover {
+  transform: scale(1.1);
+}
+
+.socialIcons > a > svg {
+  color: #244d4d;
+}

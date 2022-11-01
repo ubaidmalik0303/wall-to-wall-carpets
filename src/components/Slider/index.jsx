@@ -47,7 +47,7 @@ const Slider = () => {
   };
 
   const scrollDown = () => {
-    window && window.scrollTo(0, window.innerHeight);
+    window && window.scrollTo(0, window.scrollY + window.innerHeight - 65);
   };
 
   return (

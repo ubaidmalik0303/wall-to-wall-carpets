@@ -5,7 +5,6 @@ import LogoHeadingDiscription from "../LogoHeadingDiscription";
 import Heading from "../Heading";
 
 const WhatYouGet = () => {
-
   const Features = [
     {
       icon: <FaAward />,
@@ -31,7 +30,13 @@ const WhatYouGet = () => {
     <div className={`container-fluid themeBgColor ${styles.WhatYouGet}`}>
       <div className="container">
         <div className="row pt-5 pb-4">
-          <div className="col-md-8">
+          <div
+            className="col-md-8"
+            data-aos="fade-zoom-in"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
             <Heading variant="h2">
               Benefits You Get When Using Our Services
             </Heading>
@@ -40,7 +45,12 @@ const WhatYouGet = () => {
         <div className="row">
           {Features.map((val, i) => {
             return (
-              <div key={i} className="col-md-4 px-2 py-3">
+              <div
+                data-aos="fade-up"
+                data-aos-delay={i * 200}
+                key={i}
+                className="col-md-4 px-2 py-3"
+              >
                 <LogoHeadingDiscription
                   icon={val.icon}
                   heading={val.heading}

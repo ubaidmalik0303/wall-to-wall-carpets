@@ -45,7 +45,7 @@ p {
 
 .slideImage {
   height: 100%;
-  width: 70%;
+  width: 80%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
@@ -162,5 +162,4 @@ p {
   .sliderArrows > svg:last-child {
     transform: rotateZ(-90deg);
   }
-  
 }

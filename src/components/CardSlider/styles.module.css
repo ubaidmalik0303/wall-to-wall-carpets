@@ -1,0 +1,76 @@
+.cardSlider {
+  height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.sliderArrows {
+  display: flex;
+  align-self: flex-end;
+  margin: 20px 0;
+}
+
+.sliderArrows > svg {
+  font-size: 35px;
+  color: #244d4d;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.slidesMaincontainer {
+  overflow-x: hidden;
+}
+
+.slidesRowContainer {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+}
+
+.cardSlide {
+  background-color: #244d4d;
+  height: 350px;
+  width: 300px;
+  margin: 0 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+  border-start-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.cardSlide > h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cardSlide > p {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.cardSlide:first-child {
+  margin-left: 0;
+}
+
+.cardSlide:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .cardSlide {
+    max-width: 500px;
+  }
+}

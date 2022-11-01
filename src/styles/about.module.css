@@ -1,0 +1,36 @@
+.about p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(63, 63, 63);
+}
+
+.aboutContactIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.aboutContactIcons > a {
+  color: #244d4d;
+  text-decoration: none;
+  margin: 20px;
+  transition: transform 300ms linear;
+}
+
+.aboutContactIcons > a:hover {
+  color: #244d4d;
+  transform: scale(1.1);
+}
+
+.aboutContactIcons > a > svg {
+  font-size: 2rem;
+  color: #244d4d;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px){
+  .aboutContactIcons{
+    flex-direction: column;
+  }
+}
