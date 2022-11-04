@@ -1,32 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import * as sliderStyles from "./styles.module.css";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
+import { StaticImage } from "gatsby-plugin-image";
+import Slide1 from "../../images/slide1.jpg";
+import Slide2 from "../../images/slide2.jpg";
+import Slide3 from "../../images/slide3.jpg";
+import Slide4 from "../../images/slide4.jpg";
 
 const Slider = () => {
   const arr = [
     {
       heading: "We Help You On What You Need",
       discription: "Some dummy text here what you want to add its all on you!",
-      image:
-        "https://i.pinimg.com/736x/9f/83/4c/9f834c1bbb783ce57c8545dd4c7fae3b.jpg",
+      image: Slide4,
     },
     {
-      heading: "We Help You On What You Need",
+      heading: "Carpets Variation",
       discription: "Some dummy text here what you want to add its all on you!",
-      image:
-        "https://i.pinimg.com/736x/9f/83/4c/9f834c1bbb783ce57c8545dd4c7fae3b.jpg",
+      image: Slide1,
     },
     {
-      heading: "We Help You On What You Need",
+      heading: "Living Room Carpets",
       discription: "Some dummy text here what you want to add its all on you!",
-      image:
-        "https://i.pinimg.com/736x/9f/83/4c/9f834c1bbb783ce57c8545dd4c7fae3b.jpg",
+      image: Slide2,
     },
     {
-      heading: "We Help You On What You Need",
+      heading: "Mosque Carpets",
       discription: "Some dummy text here what you want to add its all on you!",
-      image:
-        "https://i.pinimg.com/736x/9f/83/4c/9f834c1bbb783ce57c8545dd4c7fae3b.jpg",
+      image: Slide3,
     },
   ];
 
@@ -68,7 +69,7 @@ const Slider = () => {
                 className={`${sliderStyles.slideImage} ${
                   index === slideIndex ? sliderStyles.animateImage : ""
                 }`}
-                style={{ background: `url("${slide.image}")` }}
+                style={{ backgroundImage: `url(${slide.image})` }}
               ></div>
             </div>
           );

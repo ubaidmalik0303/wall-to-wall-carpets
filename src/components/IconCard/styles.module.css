@@ -1,0 +1,38 @@
+.iconCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconCard img {
+  width: 80px;
+  height: 80px;
+}
+
+.iconCard h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #244d4d;
+}
+
+.iconCard p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+}
+
+.iconCard a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #244d4d;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.iconCard a > svg {
+  font-size: 1rem;
+  margin-left: 5px;
+}

@@ -1,6 +1,11 @@
 import React from "react";
 import * as styles from "./styles.module.css";
-import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaWhatsapp,
+  FaEnvelope,
+  FaLocationArrow,
+} from "react-icons/fa";
 
 const HomeBottom = () => {
   return (
@@ -31,6 +36,10 @@ const HomeBottom = () => {
           </a>
           <a href="">
             <FaEnvelope />
+            info@walltowallcarpets.ae
+          </a>
+          <a href="">
+            <FaLocationArrow />
             info@walltowallcarpets.ae
           </a>
         </div>

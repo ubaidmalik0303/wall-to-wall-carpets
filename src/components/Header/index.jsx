@@ -33,16 +33,32 @@ const Header = () => {
           <FiArrowDown />
           <ul>
             <li>
-              <Link to="/">Office</Link>
+              <Link to="/wall-to-wall-carpets/office-carpets">
+                Office Carpets
+              </Link>
             </li>
             <li>
-              <Link to="/wall-to-wall-carpets/sisal-carpets">Sisal Carpets</Link>
+              <Link to="/wall-to-wall-carpets/sisal-carpets">
+                Sisal Carpets
+              </Link>
             </li>
             <li>
-              <Link to="/">Room</Link>
+              <Link to="/wall-to-wall-carpets/bedroom-carpets">Bedroom Carpets</Link>
             </li>
             <li>
-              <Link to="/">Mosque</Link>
+              <Link to="/wall-to-wall-carpets/living-room-carpets">
+                Living Room Carpets
+              </Link>
+            </li>
+            <li>
+              <Link to="/wall-to-wall-carpets/mosque-carpets">
+                Mosque Carpets
+              </Link>
+            </li>
+            <li>
+              <Link to="/wall-to-wall-carpets/exhibition-carpets">
+                Exhibition Carpets
+              </Link>
             </li>
           </ul>
         </li>

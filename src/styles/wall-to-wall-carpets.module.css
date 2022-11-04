@@ -1,0 +1,10 @@
+.wallToWallCarpets p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgb(68, 68, 68);
+}
+
+.wallToWallCarpets h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}

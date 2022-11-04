@@ -22,19 +22,37 @@
   font-size: 1rem;
 }
 
-.headingDiscriptionBox{
+.headingDiscriptionBox {
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
 }
 
-.headingDiscriptionBox h4{
+.headingDiscriptionBox h4 {
   color: black;
   font-weight: 600;
   font-size: 18px;
+  margin: 15px 0;
 }
 
-.headingDiscriptionBox p{
+.headingDiscriptionBox h4 > span {
+  background-color: #244d4d;
+  color: white;
+  font-weight: 900;
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.headingDiscriptionBox p {
   color: rgb(66, 66, 66);
   font-weight: 400;
   font-size: 15px;
+  border-left: 1px solid rgb(143, 142, 142);
+  padding-left: 40px;
+  margin: 0 0 0 25px;
+}
+
+.headingDiscriptionBox p:last-child {
+  border: none;
 }

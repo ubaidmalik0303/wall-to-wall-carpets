@@ -3,13 +3,19 @@ import * as styles from "../styles/about.module.css";
 import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import SideImage from "../components/SideImage";
-import { FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaWhatsapp,
+  FaLocationArrow,
+} from "react-icons/fa";
 import Handyman from "../images/handyman.jpg";
+import Button from "../components/Button";
 
 const about = () => {
   return (
     <Layout>
-      <div className={`container-fluid themeBgColor ${styles.about}`}>
+      <div className={`themeBgColor ${styles.about}`}>
         <div className="container py-5" data-aos="fade-up">
           <div className="my-5">
             <Heading>About Our Company</Heading>
@@ -104,6 +110,12 @@ const about = () => {
               quasi laboriosam vero provident.
             </p>
           </SideImage>
+        </div>
+        <div className={`themeBgColorSecond container-fluid ${styles.locationBox} py-5`}>
+          <div className="container">
+            <FaLocationArrow />
+            <span>Sheikh Zayed Road Al Qouz First Behind Bmw/Agmc 4th Street Showroom No 33</span>
+          </div>
         </div>
       </div>
     </Layout>

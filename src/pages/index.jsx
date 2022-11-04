@@ -9,6 +9,7 @@ import Button from "../components/Button";
 import CardSlider from "../components/CardSlider";
 import HomeBottom from "../components/HomeBottom";
 import HomeServices from "../components/HomeServices";
+import { StaticImage } from "gatsby-plugin-image";
 
 const index = () => {
   return (
@@ -17,10 +18,11 @@ const index = () => {
       <WhatYouGet />
       <SideImage
         image={
-          <img
-            src="https://i.pinimg.com/736x/9f/83/4c/9f834c1bbb783ce57c8545dd4c7fae3b.jpg"
+          <StaticImage
+            src="../images/sisal-carpets-dubai.jpg"
             width={350}
             height={400}
+            objectFit="contain"
           />
         }
       >
@@ -55,10 +57,11 @@ const index = () => {
       <SideImage
         right
         image={
-          <img
-            src="https://i.pinimg.com/736x/9f/83/4c/9f834c1bbb783ce57c8545dd4c7fae3b.jpg"
+          <StaticImage
+            src="../images/carpets-dubai.jpg"
             width={350}
             height={400}
+            objectFit="contain"
           />
         }
       >
@@ -68,23 +71,29 @@ const index = () => {
           </div>
         </div>
         <div className={`${styles.headingDiscriptionBox}`}>
-          <h4>1. Office</h4>
+          <h4>
+            <span>01</span> Office
+          </h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Repudiandae mollitia non soluta Repudiandae mollitia non soluta
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae mollitia non soluta Repudiandae mollitia non soluta
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae mollitia non soluta Repudiandae mollitia non soluta
           </p>
-          <h4>1. Office</h4>
+          <h4>
+            <span>02</span> Office
+          </h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Repudiandae mollitia non soluta Repudiandae mollitia non soluta
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae mollitia non soluta Repudiandae mollitia non soluta
+          </p>
+          <h4>
+            <span>03</span> Office
+          </h4>
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Repudiandae mollitia non soluta Repudiandae mollitia non soluta
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
       </SideImage>

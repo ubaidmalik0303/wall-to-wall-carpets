@@ -22,7 +22,9 @@
 .homeBottomContactIcons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: 40px;
 }
 
@@ -42,10 +44,4 @@
   font-size: 2rem;
   color: #244d4d;
   margin-right: 10px;
-}
-
-@media screen and (max-width: 800px) {
-  .homeBottomContactIcons {
-    flex-direction: column;
-  }
 }
