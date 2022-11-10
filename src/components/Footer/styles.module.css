@@ -1,4 +1,62 @@
-.footer {
+.logoText {
+  color: #244d4d;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.logoText > span {
+  font-size: 2rem;
+}
+
+.footer p {
+  color: rgb(59, 59, 59);
+}
+
+.footer h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.footer ul li{
+  color: rgb(49, 49, 49);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContact div {
+  margin: 5px 0;
+}
+
+.footerContact svg {
+  color: #244d4d;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footerContact a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+
+.footerContact a:hover{
+  color: rgb(54, 54, 54);
+}
+
+.footerBottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,7 +64,7 @@
   padding: 50px 10px 20px 10px;
 }
 
-.footer span {
+.footerBottom span {
   font-size: 1rem;
   font-weight: 500;
 }

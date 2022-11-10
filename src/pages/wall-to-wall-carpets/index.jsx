@@ -1,57 +1,173 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../../components/Layout";
-import Heading from "../../components/Heading";
+import * as styles from "../../styles/services-page.module.css";
 import SideImage from "../../components/SideImage";
-import * as styles from "../../styles/wall-to-wall-carpets.module.css";
+import Heading from "../../components/Heading";
+import { FaCheckCircle } from "react-icons/fa";
+import Gallery from "../../components/Gallery";
+import { graphql } from "gatsby";
+import WorkProcess from "../../components/WorkProcess";
+import Form from "../../components/Form";
 import ContentByNumber from "../../components/ContentByNumber";
+import CTA from "../../components/CTA";
 
-const index = () => {
+const Index = ({ data }) => {
+  const imagesData = data.gallery.edges;
+
   return (
     <Layout>
-      <div className={`themeBgColor py-5 ${styles.wallToWallCarpets}`}>
-        <div className="container">
-          <div className="py-4">
-            <Heading>Wall To Wall Carpets</Heading>
+      <div className={`${styles.servicesPage} themeBgColor`}>
+        <div className="container py-5">
+          <div className="row py-4">
+            <div className="col-md-10">
+              <Heading variant="h2" size={70}>
+                Wall To Wall Carpets Dubai
+              </Heading>
+            </div>
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-            eligendi minima magni ratione, quam illum nemo magnam eius, nulla at
-            quia eos? Molestiae hic unde laborum temporibus suscipit. Maxime,
-            quam. Placeat in quasi veniam pariatur rem hic magni tempore esse.
-            Hic dignissimos aut vel exercitationem vitae natus nesciunt nulla
-            ipsam, quos deleniti, quia consectetur ipsa laborum. Nam beatae
-            atque porro? Cumque earum illo vero dolor est error maxime doloribus
-            molestias nisi optio recusandae rem fuga assumenda illum, tempore
-            eligendi suscipit doloremque cupiditate quae harum nam iusto? Nihil
-            recusandae dolores perspiciatis! Fugit temporibus asperiores
-            sapiente alias, assumenda sint saepe. Molestias, accusamus?
-            Architecto tempora voluptate et recusandae? Ratione possimus tenetur
-            quas sit nisi velit, ab harum, suscipit saepe asperiores natus
-            doloribus maiores. Libero, deleniti nam? Sed consequuntur ipsa
-            veniam nam culpa doloremque tempore aliquid neque quis itaque nihil
-            quas explicabo repudiandae error, doloribus qui quo reiciendis!
-            Quaerat necessitatibus omnis temporibus optio ut.
+          <p data-aos="fade-in">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            sequi doloremque sapiente, necessitatibus beatae illo. Asperiores
+            debitis, corrupti consequatur enim magnam maxime impedit. Quasi
+            soluta ducimus suscipit quos harum architecto! Inventore alias magni
+            id, natus beatae voluptatem fugiat quas? Error eius optio
+            voluptates, incidunt voluptas, officia amet corporis quam
+            repellendus perferendis nisi voluptate consequuntur! Alias inventore
+            possimus cupiditate a sint? Ea tempore ad voluptatibus minima atque
+            recusandae optio ab placeat officia mollitia modi nihil eos, a
+            sapiente iste ipsa nemo ratione debitis consequuntur suscipit. Enim
+            molestias nobis assumenda omnis praesentium. Sit fugiat minus eius
+            optio fugit quod voluptatem sed explicabo veniam inventore
+            accusantium esse, voluptates, eveniet blanditiis quaerat! Assumenda
+            itaque eos, facilis fugiat ducimus temporibus dolore reprehenderit
+            incidunt nostrum hic. Quidem illo placeat praesentium magni optio,
+            quas, cupiditate corporis, illum ab similique reprehenderit tempora
+            fugit. Officia repudiandae asperiores magnam nemo ipsa. Totam, nobis
+            praesentium sequi atque sunt maiores cupiditate amet.
           </p>
         </div>
         <SideImage
           image={
-            <img
-              src="https://i.pinimg.com/736x/9f/83/4c/9f834c1bbb783ce57c8545dd4c7fae3b.jpg"
-              width={350}
-              height={400}
+            <StaticImage
+              src="../../images/bedroom-carpet.jpg"
+              width={500}
+              height={500}
             />
           }
         >
-          <ContentByNumber />
+          <div className="py-4">
+            <Heading size={"4rem"} variant="h2">
+              Wall To Wall Carpets
+            </Heading>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            perferendis quibusdam beatae, eos veritatis minus, quod tenetur
+            eveniet aperiam repellat quo quia enim laborum debitis. Perferendis
+            quibusdam cupiditate illum aperiam!Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus perferendis quibusdam
+            beatae, eos veritatis minus, quod tenetur eveniet aperiam repellat
+            quo quia enim laborum debitis. Perferendis quibusdam cupiditate
+            illum aperiam!
+          </p>
         </SideImage>
-        <div className={`container-fluid themeBgColorSecond py-5`}>
-          <div className="container">
-            <h2>Contact Us</h2>
+        <SideImage
+          right
+          image={
+            <StaticImage
+              src="../../images/bedroom-carpet (2).jpg"
+              width={500}
+              height={500}
+            />
+          }
+        >
+          <div className="py-4">
+            <Heading size={"4rem"} variant="h2">
+              Wall To Wall Carpet
+            </Heading>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            perferendis quibusdam beatae, eos veritatis minus, quod tenetur
+            eveniet aperiam repellat quo quia enim laborum debitis. Perferendis
+            quibusdam cupiditate illum aperiam!Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus perferendis quibusdam
+            beatae, eos veritatis minus, quod tenetur eveniet aperiam repellat
+            quo quia enim laborum debitis. Perferendis quibusdam cupiditate
+            illum aperiam!
+          </p>
+        </SideImage>
+        <div className="themeBgColorSecond py-5">
+          <div data-aos="fade-up" className="container text-center">
+            <FaCheckCircle color="white" size={60} />
+            <h3 className="my-4">Why Choose Wall To Wall Carpets</h3>
+            <p className="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              eius, alias id incidunt odio ad suscipit, a quaerat facere
+              laboriosam accusamus vero. Quo rem inventore quisquam tempore,
+              voluptatum magni aut? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Atque eius, alias id incidunt odio ad suscipit,
+              a quaerat facere laboriosam accusamus vero. Quo rem inventore
+              quisquam tempore, voluptatum magni aut?
+            </p>
+            <WorkProcess />
+          </div>
+        </div>
+        <div className="container">
+          <div className="row py-5">
+            <div className="col-md-10">
+              <Heading size={"4rem"} variant="h4">
+                Wall To Wall Carpets Gallery
+              </Heading>
+            </div>
+          </div>
+          <Gallery data={imagesData} />
+        </div>
+        <div className="container py-5">
+          <div className="col-md-10">
+            <Heading size={"4rem"} variant="h4">
+              Contact For Book Appointment
+            </Heading>
+          </div>
+          <div className="row py-5 justify-content-center">
+            <div data-aos="fade-right" className="col-md-6 py-md-0 py-4">
+              <ContentByNumber />
+            </div>
+            <div data-aos="fade-left" className="col-md-6">
+              <Form />
+            </div>
           </div>
         </div>
       </div>
+      <CTA />
     </Layout>
   );
 };
 
-export default index;
+export const query = graphql`
+  query {
+    gallery: allFile(
+      filter: { relativeDirectory: { eq: "gallery/Bedroom Carpets" } }
+    ) {
+      edges {
+        node {
+          id
+          base
+          publicURL
+          childImageSharp {
+            gatsbyImageData(
+              height: 500
+              width: 500
+              transformOptions: { fit: COVER }
+              placeholder: BLURRED
+              webpOptions: { quality: 50 }
+            )
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default Index;

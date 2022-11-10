@@ -1,0 +1,35 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cta a {
+  text-decoration: none;
+}
+
+.cta button {
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid #244d4d;
+  outline: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: #244d4d;
+  transition: transform 300ms linear;
+}
+
+.cta button:hover {
+  transform: scale(1.1);
+}
+
+.cta button svg {
+  color: #244d4d;
+  margin-right: 10px;
+}

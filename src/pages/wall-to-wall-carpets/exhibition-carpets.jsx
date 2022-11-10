@@ -1,7 +1,7 @@
 import React from "react";
+import * as styles from "../../styles/services-page.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../../components/Layout";
-import * as styles from "../../styles/bedroom-carpets.module.css";
 import SideImage from "../../components/SideImage";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
@@ -11,6 +11,7 @@ import { graphql } from "gatsby";
 import WorkProcess from "../../components/WorkProcess";
 import Form from "../../components/Form";
 import ContentByNumber from "../../components/ContentByNumber";
+
 
 const ExhibitionCarpets = ({ data }) => {
   const imagesData = data.gallery.edges;

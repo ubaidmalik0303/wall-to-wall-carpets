@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../../components/Layout";
-import * as styles from "../../styles/bedroom-carpets.module.css";
+import * as styles from "../../styles/services-page.module.css";
 import SideImage from "../../components/SideImage";
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
