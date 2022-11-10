@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import Heading from "../../components/Heading";
 import SideImage from "../../components/SideImage";
 import * as styles from "../../styles/wall-to-wall-carpets.module.css";
+import ContentByNumber from "../../components/ContentByNumber";
 
 const index = () => {
   return (
@@ -41,32 +42,7 @@ const index = () => {
             />
           }
         >
-          <div className="py-4">
-            <Heading variant="h2">Second Heading Here</Heading>
-          </div>
-          <div>
-            <h4>Heading</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Obcaecati vel itaque soluta reiciendis ex exercitationem velit
-              minus earum rem sed ipsam quasi iste officiis esse quaerat, fuga,
-              nesciunt odio quia.
-            </p>
-            <h4>Heading</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Obcaecati vel itaque soluta reiciendis ex exercitationem velit
-              minus earum rem sed ipsam quasi iste officiis esse quaerat, fuga,
-              nesciunt odio quia.
-            </p>
-            <h4>Heading</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Obcaecati vel itaque soluta reiciendis ex exercitationem velit
-              minus earum rem sed ipsam quasi iste officiis esse quaerat, fuga,
-              nesciunt odio quia.
-            </p>
-          </div>
+          <ContentByNumber />
         </SideImage>
         <div className={`container-fluid themeBgColorSecond py-5`}>
           <div className="container">

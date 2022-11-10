@@ -10,6 +10,7 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
+import Form from "../components/Form";
 
 const contact = () => {
   return (
@@ -54,17 +55,7 @@ const contact = () => {
             </div>
             <div className="col-md-6">
               <h2 className="mt-5 mb-3">Get In Touch With Us</h2>
-              <form action="">
-                <input type="text" placeholder="Your Name" />
-                <input type="number" placeholder="Phone No" />
-                <input type="email" placeholder="Email" />
-                <textarea
-                  placeholder="Your Message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-                <input type="submit" value="Send Your Message" />
-              </form>
+              <Form />
             </div>
           </div>
         </div>

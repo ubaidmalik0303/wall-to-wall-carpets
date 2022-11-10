@@ -46,8 +46,10 @@ const HomeServices = () => {
   return (
     <div className={`${styles.homeServices} themeBgColor container-fluid py-5`}>
       <div className="container">
-        <div className="py-3">
-          <Heading>Our Wall To Wall Carpets</Heading>
+        <div className="row py-3">
+          <div className="col-md-10">
+            <Heading size={60}>Our Wall To Wall Carpets</Heading>
+          </div>
         </div>
         <div className="row justify-content-center align-items-center">
           {services.map((val, i) => {

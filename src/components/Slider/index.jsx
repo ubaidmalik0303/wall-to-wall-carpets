@@ -1,33 +1,27 @@
 import React, { useState } from "react";
 import * as sliderStyles from "./styles.module.css";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
-import { StaticImage } from "gatsby-plugin-image";
-import Slide1 from "../../images/slide1.jpg";
-import Slide2 from "../../images/slide2.jpg";
-import Slide3 from "../../images/slide3.jpg";
-import Slide4 from "../../images/slide4.jpg";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const Slider = () => {
+const Slider = ({ data }) => {
+  const imagesData = data.slider.edges;
+
   const arr = [
     {
       heading: "We Help You On What You Need",
       discription: "Some dummy text here what you want to add its all on you!",
-      image: Slide4,
     },
     {
       heading: "Carpets Variation",
       discription: "Some dummy text here what you want to add its all on you!",
-      image: Slide1,
     },
     {
       heading: "Living Room Carpets",
       discription: "Some dummy text here what you want to add its all on you!",
-      image: Slide2,
     },
     {
       heading: "Mosque Carpets",
       discription: "Some dummy text here what you want to add its all on you!",
-      image: Slide3,
     },
   ];
 
@@ -69,8 +63,17 @@ const Slider = () => {
                 className={`${sliderStyles.slideImage} ${
                   index === slideIndex ? sliderStyles.animateImage : ""
                 }`}
-                style={{ backgroundImage: `url(${slide.image})` }}
-              ></div>
+              >
+                <GatsbyImage
+                  style={{
+                    gridArea: "1/1",
+                  }}
+                  image={getImage(imagesData[slideIndex]?.node)}
+                  layout="fullWidth"
+                  aspectRatio={3 / 1}
+                  alt=""
+                />
+              </div>
             </div>
           );
         })}

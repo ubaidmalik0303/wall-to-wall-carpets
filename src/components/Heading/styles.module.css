@@ -10,6 +10,17 @@
   margin-right: 20px;
 }
 
-.headingBox h1{
-    font-weight: 900;
+.headingBox h1 {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 767px) {
+  .headingBox h1,
+  .headingBox h2,
+  .headingBox h3,
+  .headingBox h4,
+  .headingBox h5,
+  .headingBox h6 {
+    font-size: 3rem !important;
+  }
 }

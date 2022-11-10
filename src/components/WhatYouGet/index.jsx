@@ -37,7 +37,7 @@ const WhatYouGet = () => {
             data-aos-easing="ease-in-sine"
             data-aos-duration="600"
           >
-            <Heading variant="h2">
+            <Heading size={50} variant="h2">
               Benefits You Get When Using Our Services
             </Heading>
           </div>

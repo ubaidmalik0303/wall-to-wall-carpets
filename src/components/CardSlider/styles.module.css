@@ -1,5 +1,4 @@
 .cardSlider {
-  height: calc(100vh - 65px);
   display: flex;
   align-items: center;
 }
@@ -24,21 +23,11 @@
   margin: 0 5px;
 }
 
-.slidesMaincontainer {
-  overflow-x: hidden;
-}
-
-.slidesRowContainer {
-  display: flex;
-  width: fit-content;
-  justify-content: center;
-}
-
 .cardSlide {
-  background-color: #244d4d;
-  height: 350px;
   width: 300px;
-  margin: 0 10px;
+  height: 300px;
+  background-color: #244d4d;
+  margin: 0 auto;
   color: white;
   display: flex;
   flex-direction: column;

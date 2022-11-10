@@ -9,12 +9,16 @@ import Button from "../components/Button";
 import CardSlider from "../components/CardSlider";
 import HomeBottom from "../components/HomeBottom";
 import HomeServices from "../components/HomeServices";
+import ContentByNumber from "../components/ContentByNumber";
+import Gallery from "../components/Gallery";
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 
-const index = () => {
+const index = ({ data }) => {
+  console.log(data);
   return (
     <Layout>
-      <Slider />
+      <Slider data={data} />
       <WhatYouGet />
       <SideImage
         image={
@@ -28,7 +32,7 @@ const index = () => {
       >
         <div className="row">
           <div className="col-lg-10 col-md-12">
-            <Heading variant="h2">We Provide You The Best Experience</Heading>
+            <Heading size={40} variant="h2">We Provide You The Best Experience</Heading>
           </div>
         </div>
         <p className={styles.sideImageText}>
@@ -67,34 +71,9 @@ const index = () => {
       >
         <div className="row mb-3">
           <div className="col-lg-10 col-md-12">
-            <Heading variant="h2">We Provide You The Best Experience</Heading>
+            <Heading size={40} variant="h2">We Provide You The Best Experience</Heading>
+            <ContentByNumber />
           </div>
-        </div>
-        <div className={`${styles.headingDiscriptionBox}`}>
-          <h4>
-            <span>01</span> Office
-          </h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae mollitia non soluta Repudiandae mollitia non soluta
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-          <h4>
-            <span>02</span> Office
-          </h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae mollitia non soluta Repudiandae mollitia non soluta
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-          <h4>
-            <span>03</span> Office
-          </h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae mollitia non soluta Repudiandae mollitia non soluta
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
         </div>
       </SideImage>
       <HomeServices />
@@ -103,5 +82,26 @@ const index = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    slider: allFile(filter: { relativeDirectory: { eq: "slider" } }) {
+      edges {
+        node {
+          id
+          base
+          publicURL
+          childImageSharp {
+            gatsbyImageData(
+              transformOptions: { fit: COVER, cropFocus: CENTER }
+              placeholder: BLURRED
+              webpOptions: { quality: 50 }
+            )
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default index;

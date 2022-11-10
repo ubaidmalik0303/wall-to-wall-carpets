@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as styles from "./styles.module.css";
 import Heading from "../Heading";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
 
 const CardSlider = () => {
   const sliderContainer = document.getElementsByClassName(
@@ -25,6 +27,7 @@ const CardSlider = () => {
   return (
     <div className={`conatiner-fluid ${styles.cardSlider} themeBgColor`}>
       <div className="container">
+        <div></div>
         <Heading variant="h3">Our Beloved Customers Sayings</Heading>
         <div data-aos="fade-up" className={styles.sliderContainer}>
           <div className={styles.sliderArrows}>
@@ -32,21 +35,24 @@ const CardSlider = () => {
             <FaLongArrowAltRight onClick={nextSlide} />
           </div>
           <div className={styles.slidesMaincontainer}>
-            <div className={styles.slidesRowContainer}>
+            <Swiper spaceBetween={10} slidesPerView={3}>
               {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((val) => {
                 return (
-                  <div className={styles.cardSlide}>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Cupiditate ea tempora qui velit dolore sed eos eaque
-                      provident tempore quibusdam facere, itaque esse illum
-                      recusandae rem architecto dolor consequuntur voluptatem!
-                    </p>
-                    <h5>Ubaid Malik</h5>
-                  </div>
+                  <SwiperSlide>
+                    <div className={styles.cardSlide}>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Cupiditate ea tempora qui velit dolore sed eos
+                        eaque provident tempore quibusdam facere, itaque esse
+                        illum recusandae rem architecto dolor consequuntur
+                        voluptatem!
+                      </p>
+                      <h5>Ubaid Malik</h5>
+                    </div>
+                  </SwiperSlide>
                 );
               })}
-            </div>
+            </Swiper>
           </div>
         </div>
       </div>

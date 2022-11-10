@@ -10,7 +10,7 @@ import {
   FaLocationArrow,
 } from "react-icons/fa";
 import Handyman from "../images/handyman.jpg";
-import Button from "../components/Button";
+import ContentByNumber from "../components/ContentByNumber";
 
 const about = () => {
   return (
@@ -88,33 +88,18 @@ const about = () => {
         <div className="container py-5">
           <Heading>Quality Installation</Heading>
           <SideImage image={<img src={Handyman} width="100%" height={400} />}>
-            <h4>Step 1.</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              dolorem mollitia. Esse ab quasi dolore praesentium accusamus id et
-              excepturi? Voluptas repudiandae nesciunt fugiat repellat quia
-              quasi laboriosam vero provident.
-            </p>
-            <h4>Step 2.</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              dolorem mollitia. Esse ab quasi dolore praesentium accusamus id et
-              excepturi? Voluptas repudiandae nesciunt fugiat repellat quia
-              quasi laboriosam vero provident.
-            </p>
-            <h4>Step 3.</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-              dolorem mollitia. Esse ab quasi dolore praesentium accusamus id et
-              excepturi? Voluptas repudiandae nesciunt fugiat repellat quia
-              quasi laboriosam vero provident.
-            </p>
+            <ContentByNumber />
           </SideImage>
         </div>
-        <div className={`themeBgColorSecond container-fluid ${styles.locationBox} py-5`}>
+        <div
+          className={`themeBgColorSecond container-fluid ${styles.locationBox} py-5`}
+        >
           <div className="container">
             <FaLocationArrow />
-            <span>Sheikh Zayed Road Al Qouz First Behind Bmw/Agmc 4th Street Showroom No 33</span>
+            <span>
+              Sheikh Zayed Road Al Qouz First Behind Bmw/Agmc 4th Street
+              Showroom No 33
+            </span>
           </div>
         </div>
       </div>

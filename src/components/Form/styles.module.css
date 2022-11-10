@@ -1,0 +1,19 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm > input,
+.contactForm > textarea {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #244d4d;
+}
+
+.contactForm > input[type="submit"] {
+  background-color: #244d4d;
+  color: white;
+  font-weight: 500;
+}
