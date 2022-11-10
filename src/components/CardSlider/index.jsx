@@ -6,8 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 
 const CardSlider = () => {
+  const isBrowser = typeof window !== "undefined";
   const sliderContainer =
-    document && document.getElementsByClassName(styles.slidesMaincontainer);
+    isBrowser && document.getElementsByClassName(styles.slidesMaincontainer);
 
   const prevSlide = () => {
     sliderContainer[0].scrollLeft = sliderContainer[0].scrollLeft - 270;
