@@ -127,7 +127,7 @@ p {
 @media screen and (max-width: 920px) {
   .slider {
     justify-content: flex-end;
-    height: 35vh;
+    height: 40vh;
   }
 
   .slide {
