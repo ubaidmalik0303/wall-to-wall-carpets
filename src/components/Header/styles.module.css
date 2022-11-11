@@ -101,8 +101,8 @@
     padding: 10px;
     border-top: 5px solid #244d4d;
     width: calc(100% - 20px);
-    position: fixed;
-    top: -100%;
+    position: absolute;
+    top: -100vh;
     left: 10px;
     right: 10px;
     z-index: 60;
@@ -137,7 +137,7 @@
   }
 
   .hideNav {
-    top: -100%;
+    top: -100vh;
     visibility: visible;
   }
 }
