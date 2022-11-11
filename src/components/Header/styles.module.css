@@ -80,7 +80,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .header{
+  .header {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -112,6 +112,10 @@
 
   .navbar li a {
     width: 100%;
+  }
+
+  .navbar > li > svg {
+    font-size: 30px;
   }
 
   .navbar > li > ul {
