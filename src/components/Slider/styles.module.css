@@ -127,7 +127,7 @@ p {
 @media screen and (max-width: 920px) {
   .slider {
     justify-content: flex-end;
-    height: 40vh;
+    height: 400px;
   }
 
   .slide {
@@ -165,7 +165,14 @@ p {
     transform: rotateZ(-90deg);
   }
 
-  .goDownBtn{
+  .goDownBtn {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slider {
+    justify-content: flex-end;
+    height: 300px;
   }
 }
