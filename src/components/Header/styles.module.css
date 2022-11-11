@@ -11,6 +11,11 @@
   color: #244d4d;
   font-size: 1.5rem;
   font-weight: 900;
+  text-decoration: none;
+}
+
+.logoText:hover {
+  color: #244d4d;
 }
 
 .logoText > span {

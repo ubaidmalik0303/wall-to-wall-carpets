@@ -13,9 +13,9 @@ const Header = () => {
 
   return (
     <div className={`${headerstyles.header} themeBgColor`}>
-      <h1 className={headerstyles.logoText}>
+      <Link to="/" className={headerstyles.logoText}>
         <span>C</span>arpets
-      </h1>
+      </Link>
       <FaBars size={25} className={headerstyles.bars} onClick={handleShowNav} />
       <ul
         className={`${headerstyles.navbar} ${
@@ -43,7 +43,9 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/wall-to-wall-carpets/bedroom-carpets">Bedroom Carpets</Link>
+              <Link to="/wall-to-wall-carpets/bedroom-carpets">
+                Bedroom Carpets
+              </Link>
             </li>
             <li>
               <Link to="/wall-to-wall-carpets/living-room-carpets">
