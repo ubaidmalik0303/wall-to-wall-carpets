@@ -1,28 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import * as styles from "./styles.module.css";
 import Heading from "../Heading";
-import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltLeft, FaLongArrowAltRight, FaCommentAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 
 const CardSlider = () => {
-  const isBrowser = typeof window !== "undefined";
-  const sliderContainer =
-    isBrowser && document.getElementsByClassName(styles.slidesMaincontainer);
-
-  const prevSlide = () => {
-    sliderContainer[0].scrollLeft = sliderContainer[0].scrollLeft - 270;
-  };
-
-  const nextSlide = () => {
-    sliderContainer[0].scrollLeft = sliderContainer[0].scrollLeft + 270;
-  };
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     nextSlide();
-  //   }, 10000);
-  // }, [nextSlide]);
+  const [my_swiper, set_my_swiper] = useState({});
 
   return (
     <div className={`conatiner-fluid ${styles.cardSlider} themeBgColor`}>
@@ -31,15 +15,35 @@ const CardSlider = () => {
         <Heading variant="h3">Our Beloved Customers Sayings</Heading>
         <div data-aos="fade-up" className={styles.sliderContainer}>
           <div className={styles.sliderArrows}>
-            <FaLongArrowAltLeft onClick={prevSlide} />
-            <FaLongArrowAltRight onClick={nextSlide} />
+            <FaLongArrowAltLeft onClick={() => my_swiper.slidePrev()} />
+            <FaLongArrowAltRight onClick={() => my_swiper.slideNext()} />
           </div>
-          <div className={styles.slidesMaincontainer}>
-            <Swiper spaceBetween={10} slidesPerView={3}>
+          <div>
+            <Swiper
+              onInit={(ev) => {
+                set_my_swiper(ev);
+              }}
+              spaceBetween={10}
+              breakpoints={{
+                640: {
+                  width: 640,
+                  slidesPerView: 1,
+                },
+                768: {
+                  width: 768,
+                  slidesPerView: 2,
+                },
+                1000: {
+                  width: 1000,
+                  slidesPerView: 3,
+                },
+              }}
+            >
               {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((val) => {
                 return (
                   <SwiperSlide>
                     <div className={styles.cardSlide}>
+                      <FaCommentAlt size={30} className="mb-3" />
                       <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Cupiditate ea tempora qui velit dolore sed eos

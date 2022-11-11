@@ -3,6 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FloatingButton from "../FloatingButton";
 
 const Layout = ({ children }) => {
   let AOS;
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <Footer />
+      <FloatingButton />
     </div>
   );
 };

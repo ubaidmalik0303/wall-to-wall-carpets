@@ -40,7 +40,8 @@ const HomeBottom = () => {
           </a>
           <a href="">
             <FaLocationArrow />
-            info@walltowallcarpets.ae
+            Sheikh Zayed Road Al Qouz First Behind Bmw/Agmc 4th Street Showroom
+            No 33
           </a>
         </div>
       </div>

@@ -107,7 +107,7 @@ p {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 50px;
+  right: 100px;
   bottom: 0;
   cursor: pointer;
   z-index: 20;
@@ -139,6 +139,7 @@ p {
   .slideTextBox {
     width: fit-content;
     margin: 0 20px;
+    background-color: #244d4d79;
   }
 
   .slideImage {
