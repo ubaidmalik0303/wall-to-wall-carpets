@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import * as styles from "./styles.module.css";
 import Heading from "../Heading";
-import { FaLongArrowAltLeft, FaLongArrowAltRight, FaCommentAlt } from "react-icons/fa";
+import {
+  FaLongArrowAltLeft,
+  FaLongArrowAltRight,
+  FaCommentAlt,
+} from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 

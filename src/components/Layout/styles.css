@@ -12,6 +12,11 @@ body {
   overflow-x: hidden !important;
 }
 
+.layout {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .themeBgColor {
   background-color: rgb(241, 241, 241);
 }
