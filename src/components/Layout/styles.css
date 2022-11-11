@@ -9,12 +9,7 @@
 }
 
 body {
-  overflow-x: hidden !important;
-}
-
-.layout {
-  width: 100vw;
-  overflow-x: hidden;
+  contain: paint !important;
 }
 
 .themeBgColor {
