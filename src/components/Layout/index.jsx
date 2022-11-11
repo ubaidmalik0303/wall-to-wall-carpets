@@ -25,10 +25,10 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
+      {/* <FloatingButton /> */}
       <Header />
       {children}
       <Footer />
-      <FloatingButton />
     </div>
   );
 };
