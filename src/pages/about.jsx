@@ -3,105 +3,89 @@ import * as styles from "../styles/about.module.css";
 import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import SideImage from "../components/SideImage";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaWhatsapp,
-  FaLocationArrow,
-} from "react-icons/fa";
-import Handyman from "../images/handyman.jpg";
-import ContentByNumber from "../components/ContentByNumber";
+import { StaticImage } from "gatsby-plugin-image";
+import CTA from "../components/CTA"
 
 const about = () => {
   return (
     <Layout>
-      <div className={`themeBgColor ${styles.about}`}>
-        <div className="container py-5" data-aos="fade-up">
-          <div className="my-5">
-            <Heading>About Our Company</Heading>
-          </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-            natus temporibus nisi. Sunt itaque obcaecati recusandae odio fugiat
-            id, magni non laudantium, quis quod modi porro vero sint ab
-            eligendi? Nobis fugiat itaque ab labore eius adipisci est iste
-            delectus, velit praesentium vero, repellendus quia placeat omnis sit
-            porro. Eveniet, recusandae rerum quasi excepturi nostrum totam
-            voluptate neque quia vero. Dignissimos laborum quia eius modi est
-            error repellat placeat, et magnam voluptatibus. Libero vel qui
-            debitis officiis praesentium deserunt eum repudiandae autem, officia
-            distinctio, dolores saepe reprehenderit quibusdam quas molestiae.
-            Quae in deserunt magni accusamus deleniti placeat voluptatem nihil,
-            repudiandae excepturi quo, magnam quibusdam. Dolorum rem eaque
-            sapiente iste esse odio earum enim possimus modi dolore, debitis,
-            non, accusantium magni! Nesciunt velit explicabo non? Vitae
-            consequuntur tempora quos magnam quo! Doloremque quae magni nam
-            optio culpa vel repellendus eius aliquid delectus architecto eos
-            debitis, quidem corporis quis voluptatum eveniet eligendi.
-          </p>
-          <div className={styles.aboutContactIcons}>
-            <a href="">
-              <FaPhoneAlt />
-              +971 55 472 2980
-            </a>
-            <a href="">
-              <FaWhatsapp />
-              +971 55 472 2980
-            </a>
-            <a href="">
-              <FaEnvelope />
-              info@walltowallcarpets.ae
-            </a>
-          </div>
-        </div>
-        <div className="container py-5">
-          <Heading>Fast & Reliable Transport</Heading>
-          <SideImage
-            right
-            image={
-              <img
-                src="https://fixitdesign.ae/wp-content/uploads/2021/06/Official-Van-1024x502-min_813x398-2.webp"
-                width="100%"
-                height={200}
-              />
-            }
-          >
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum hic
-              molestiae magnam quod nisi at quam cum expedita libero, debitis
-              reiciendis excepturi doloribus deleniti officiis ipsa non ipsum.
-              Voluptate, similique.Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Eum hic molestiae magnam quod nisi at quam cum
-              expedita libero, debitis reiciendis excepturi doloribus deleniti
-              officiis ipsa non ipsum. Voluptate, similique.Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Eum hic molestiae magnam
-              quod nisi at quam cum expedita libero, debitis reiciendis
-              excepturi doloribus deleniti officiis ipsa non ipsum. Voluptate,
-              similique.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Eum hic molestiae magnam quod nisi at quam cum expedita libero,
-              debitis reiciendis excepturi doloribus deleniti officiis ipsa non
-              ipsum. Voluptate, similique.
-            </p>
-          </SideImage>
-        </div>
-
-        <div className="container py-5">
-          <Heading>Quality Installation</Heading>
-          <SideImage image={<img src={Handyman} width="100%" height={400} />}>
-            <ContentByNumber />
-          </SideImage>
-        </div>
-        <div
-          className={`themeBgColorSecond container-fluid ${styles.locationBox} py-5`}
-        >
+      <div className={styles.about}>
+        <div className="container-fluid themeBgColor">
           <div className="container">
-            <FaLocationArrow />
-            <span>
-              Sheikh Zayed Road Al Qouz First Behind Bmw/Agmc 4th Street
-              Showroom No 33
-            </span>
+            <div className="row py-5">
+              <div className="col-md-10">
+                <Heading size={70} variant="h1">
+                  About Our Company
+                </Heading>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque ut excepturi quae veniam. Maiores neque voluptate
+              maxime, aliquid quod cumque itaque pariatur deleniti delectus
+              atque quidem officiis sint esse et.Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Doloremque ut excepturi quae veniam.
+              Maiores neque voluptate maxime, aliquid quod cumque itaque
+              pariatur deleniti delectus atque quidem officiis sint esse
+              et.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque ut excepturi quae veniam. Maiores neque voluptate
+              maxime, aliquid quod cumque itaque pariatur deleniti delectus
+              atque quidem officiis sint esse et.
+            </p>
           </div>
         </div>
+        <SideImage
+          image={
+            <StaticImage
+              src="../images/769fa3e2b0f7554a3c8d890fbbdf2eb3.png"
+              width={500}
+            />
+          }
+          right
+        >
+          <Heading variant="h2" size={70}>
+            About Company
+          </Heading>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+            quo assumenda rerum iure sapiente commodi necessitatibus odio
+            voluptatibus id magnam aspernatur provident quasi delectus fuga,
+            perferendis mollitia quaerat consequatur nisi.Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Quibusdam quo assumenda rerum
+            iure sapiente commodi necessitatibus odio voluptatibus id magnam
+            aspernatur provident quasi delectus fuga, perferendis mollitia
+            quaerat consequatur nisi. Quibusdam quo assumenda rerum iure sapiente
+            commodi necessitatibus odio voluptatibus id magnam aspernatur
+            provident quasi delectus fuga, perferendis mollitia quaerat
+            consequatur nisi.
+          </p>
+        </SideImage>
+        <SideImage
+          image={
+            <StaticImage
+              src="../images/769fa3e2b0f7554a3c8d890fbbdf2eb3.png"
+              width={500}
+            />
+          }
+        >
+          <Heading variant="h2" size={70}>
+            About Company
+          </Heading>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+            quo assumenda rerum iure sapiente commodi necessitatibus odio
+            voluptatibus id magnam aspernatur provident quasi delectus fuga,
+            perferendis mollitia quaerat consequatur nisi.Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Quibusdam quo assumenda rerum
+            iure sapiente commodi necessitatibus odio voluptatibus id magnam
+            aspernatur provident quasi delectus fuga, perferendis mollitia
+            quaerat consequatur nisi. Quibusdam quo assumenda rerum iure sapiente
+            commodi necessitatibus odio voluptatibus id magnam aspernatur
+            provident quasi delectus fuga, perferendis mollitia quaerat
+            consequatur nisi.
+          </p>
+        </SideImage>
+        <CTA />
       </div>
     </Layout>
   );

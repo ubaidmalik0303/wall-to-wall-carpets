@@ -14,7 +14,7 @@ import { Link } from "gatsby";
 const Footer = () => {
   return (
     <footer className={`container-fluid ${styles.footer} themeBgColor py-3`}>
-      <div className="container py-5">
+      <div className="container pt-5">
         <div className="row">
           <div data-aos="fade-up" className="col-md-3 py-md-0 py-4">
             <h5 className={styles.logoText}>

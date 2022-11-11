@@ -1,6 +1,5 @@
 import React from "react";
 import * as styles from "./styles.module.css";
-import Heading from "../Heading";
 
 const SideImage = ({ children, image, right }) => {
   return (

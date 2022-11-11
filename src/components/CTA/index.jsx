@@ -8,7 +8,12 @@ const CTA = () => {
       <div className="container">
         <div className={styles.cta}>
           <p>Lorem, ipsum dolor sit amet consectetur.</p>
-          <a href=""><button><FaPhoneAlt />Call Now</button></a>
+          <a className="my-md-0 my-5" href="">
+            <button>
+              <FaPhoneAlt />
+              Call Now
+            </button>
+          </a>
         </div>
       </div>
     </div>

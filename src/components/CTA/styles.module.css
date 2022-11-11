@@ -2,15 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cta p {
   font-size: 2rem;
   font-weight: 500;
+  color: white;
+  text-align: center;
 }
 
 .cta a {
   text-decoration: none;
+  margin: auto;
 }
 
 .cta button {

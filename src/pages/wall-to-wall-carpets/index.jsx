@@ -109,9 +109,14 @@ const Index = ({ data }) => {
               voluptatum magni aut? Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Atque eius, alias id incidunt odio ad suscipit,
               a quaerat facere laboriosam accusamus vero. Quo rem inventore
-              quisquam tempore, voluptatum magni aut?
+              quisquam tempore, voluptatum magni aut? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Atque eius, alias id incidunt odio
+              ad suscipit, a quaerat facere laboriosam accusamus vero. Quo rem
+              inventore quisquam tempore, voluptatum magni aut? Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Atque eius, alias id
+              incidunt odio ad suscipit, a quaerat facere laboriosam accusamus
+              vero. Quo rem inventore quisquam tempore, voluptatum magni aut?
             </p>
-            <WorkProcess />
           </div>
         </div>
         <div className="container">
