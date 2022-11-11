@@ -164,4 +164,8 @@ p {
   .sliderArrows > svg:last-child {
     transform: rotateZ(-90deg);
   }
+
+  .goDownBtn{
+    padding: 10px;
+  }
 }
