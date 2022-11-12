@@ -7,6 +7,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    // `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,11 +16,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Wall To Wall Carpets Dubai`,
+    //     short_name: `Carpets Dubai`,
+    //     icon: "src/images/icon.png",
+    //     start_url: `/`,
+    //     background_color: `#f7f0eb`,
+    //     theme_color: `white`,
+    //     display: `standalone`,
+    //   },
+    // },
   ],
 };

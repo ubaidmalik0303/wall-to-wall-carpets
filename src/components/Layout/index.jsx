@@ -10,10 +10,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const AOS = require("aos");
     AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: "ease-in-sine",
-      delay: 100,
+      duration: 700,
     });
   }, []);
 
@@ -25,10 +22,10 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
-      {/* <FloatingButton /> */}
       <Header />
       {children}
       <Footer />
+      <FloatingButton />
     </div>
   );
 };

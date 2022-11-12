@@ -8,8 +8,8 @@
   scroll-behavior: smooth;
 }
 
-body {
-  contain: paint !important;
+.container-fluid {
+  overflow: hidden !important;
 }
 
 .themeBgColor {
@@ -19,7 +19,6 @@ body {
 .themeBgColorSecond {
   background-color: #244d4d;
 }
-
 
 .layout * {
   font-family: "Poppins", sans-serif;

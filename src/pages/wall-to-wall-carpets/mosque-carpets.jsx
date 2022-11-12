@@ -21,7 +21,6 @@ const MosqueCarpets = ({ data }) => {
         <div className="container">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <StaticImage
-              className={`${styles.myImage}`}
               src="../../images/mosque-icon.png"
               width={150}
               height={150}
@@ -145,10 +144,10 @@ const MosqueCarpets = ({ data }) => {
             </Heading>
           </div>
           <div className="row py-5 justify-content-center">
-            <div data-aos="fade-right" className="col-md-6 py-md-0 py-4">
+            <div data-aos="slide-right" className="col-md-6 py-md-0 py-4">
               <ContentByNumber />
             </div>
-            <div data-aos="fade-left" className="col-md-6">
+            <div data-aos="slide-left" className="col-md-6">
               <Form />
             </div>
           </div>

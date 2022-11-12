@@ -7,19 +7,19 @@ const SideImage = ({ children, image, right }) => {
         <div className="row align-items-center">
           {right ? (
             <>
-              <div data-aos="fade-right" className="col-lg-6 py-3">
+              <div data-aos="slide-right" className="col-lg-6 py-3">
                 {children}
               </div>
-              <div data-aos="fade-left" className="col-lg-6 py-3 text-center">
+              <div data-aos="slide-left" className="col-lg-6 py-3 text-center">
                 {image}
               </div>
             </>
           ) : (
             <>
-              <div data-aos="fade-right" className="col-lg-6 py-3 text-center">
+              <div data-aos="slide-right" className="col-lg-6 py-3 text-center">
                 {image}
               </div>
-              <div data-aos="fade-left" className="col-lg-6 py-3">
+              <div data-aos="slide-left" className="col-lg-6 py-3">
                 {children}
               </div>
             </>

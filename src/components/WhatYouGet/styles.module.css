@@ -1,11 +1,4 @@
 .WhatYouGet {
-  height: calc(100vh - 65px);
   display: flex;
   align-items: center;
-}
-
-@media screen and (max-width: 900px) {
-  .WhatYouGet {
-    height: auto;
-  }
 }
