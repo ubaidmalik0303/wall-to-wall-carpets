@@ -48,7 +48,7 @@ menu > .action {
 menu > .action:hover,
 menu > .trigger:hover {
   color: var(--hi-color);
-  box-shadow: 0px 0px 0px 0.35rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 0.35rem #244d4d86;
 }
 
 menu.open > .action {

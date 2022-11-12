@@ -6,13 +6,25 @@ import { Link } from "gatsby";
 
 const Header = () => {
   const [show, setShow] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
 
   const handleShowNav = () => {
     show ? setShow(false) : setShow(true);
   };
 
+  const isWindow = typeof window !== "undefined";
+  if (isWindow) {
+    window.onscroll = () => {
+      window.scrollY > 200 ? setIsFixed(true) : setIsFixed(false);
+    };
+  }
+
   return (
-    <div className={`${headerstyles.header} themeBgColor`}>
+    <div
+      className={`${headerstyles.header} themeBgColor ${
+        isFixed ? headerstyles.fixedHeader : ""
+      }`}
+    >
       <Link to="/" className={headerstyles.logoText}>
         <span>C</span>arpets
       </Link>
